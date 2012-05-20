@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var program = require('commander')
+  , util = require('util')
+  , doxstrap = require('../');
+
+// options
+
+program
+  .version(dox.version);
+
+// examples
+
+program.on('--help', function(){
+  console.log('  Examples:');
+  console.log('');
+  console.log('    # stdin');
+  console.log('    $ doxstrap myfile.js');
+  console.log('');
+});
+
+// parse argv
+
+program.parse(process.argv);
+
