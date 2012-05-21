@@ -6,7 +6,10 @@
 
 var program = require('commander')
   , util = require('util')
-  , doxstrap = require('../');
+  , format = util.format
+  , async = require('async')
+  , doxstrap = require('../')
+  , docs = [];
 
 // options
 
@@ -27,3 +30,20 @@ program.on('--help', function(){
 
 program.parse(process.argv);
 
+
+async.forEach(program.args, function(arg, callback){
+
+  doxstrap.parse(arg, function(err, doc){
+    docs.push(doc);
+    callback(err);
+  });
+
+}, function (err) {
+  console.log('Generation starting');
+
+  docs.forEach(function(doc, index, array){
+    doxstrap.generate(doc);
+  });
+
+  console.log('Generation finished');
+});

@@ -8,6 +8,7 @@
   , "dependencies": {
       "dox": ">= 0.3.1"
     , "commander": ">= 0.6.0"
+    , "async": ">= 0.1.18"
   }
   , "devDependencies": {
   }
