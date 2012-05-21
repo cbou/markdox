@@ -14,15 +14,16 @@ var program = require('commander')
 // options
 
 program
-  .version(doxstrap.version);
+  .version(doxstrap.version)
+  .command('doxstrap [options]... files...');
 
 // examples
 
 program.on('--help', function(){
   console.log('  Examples:');
   console.log('');
-  console.log('    # stdin');
   console.log('    $ doxstrap myfile.js');
+  console.log('    $ doxstrap myfile1.js myfile2.js');
   console.log('');
 });
 
@@ -30,6 +31,7 @@ program.on('--help', function(){
 
 program.parse(process.argv);
 
+// loop over files
 
 async.forEach(program.args, function(arg, callback){
 
