@@ -9,12 +9,15 @@ var program = require('commander')
   , format = util.format
   , async = require('async')
   , doxstrap = require('../')
-  , docs = [];
+  , fs = require('fs')
+  , docs = []
+  , basePath = process.cwd();
 
 // options
 
 program
   .version(doxstrap.version)
+  .option('-o, --output <filepath>', 'specify filepath to output [output.html]', String, 'output.html')
   .command('doxstrap [options]... files...');
 
 // examples
@@ -28,7 +31,6 @@ program.on('--help', function(){
 });
 
 // parse argv
-
 program.parse(process.argv);
 
 // loop over files
@@ -43,9 +45,10 @@ async.forEach(program.args, function(arg, callback){
 }, function (err) {
   console.log('Generation starting');
 
-  docs.forEach(function(doc, index, array){
-    doxstrap.generate(doc);
+  doxstrap.generate(docs, function(err, output){
+    fs.writeFile(basePath + '/' + program.output, output, 'utf-8', function(){
+      console.log('Generation finished');
+    });
   });
 
-  console.log('Generation finished');
 });
