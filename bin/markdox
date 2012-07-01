@@ -7,17 +7,13 @@
 var program = require('commander')
   , util = require('util')
   , format = util.format
-  , async = require('async')
-  , markdox = require('../')
-  , fs = require('fs')
-  , docfiles = []
-  , formatter = require('../lib/formatter');
+  , markdox = require('../');
 
 // options
 
 program
   .version(markdox.version)
-  .option('-o, --outputfolder <folderpath>', 'specify filepath to output [/path/to/output]', String, process.cwd())
+  .option('-o, --output <filepath>', 'specify filepath to output [/path/to/output.md]', String, process.cwd() + '/output.md')
   .command('markdox [options]... files...');
 
 // examples
@@ -33,35 +29,5 @@ program.on('--help', function(){
 // parse argv
 program.parse(process.argv);
 
-// loop over files
-
-async.forEach(program.args, function(arg, callback){
-
-  markdox.parse(arg, function(err, doc){
-    var docfile = {
-      filename: arg,
-      javadoc: doc
-    };
-    docfiles.push(formatter.format(docfile));
-    callback(err);
-  });
-
-}, function (err) {
-  console.log('Generation starting');
-  async.forEach(docfiles, function(docfile){
-    markdox.generate(docfile, function(err, output){
-      if (err) {
-        throw err;
-      }
-      var path = program.outputfolder + '/' + docfile.filename + '.md';
-      console.log('Write file ' + path);
-      fs.writeFile(path, output, 'utf-8', function(err){
-        if (err) {
-          throw err;
-        }
-      });
-    });
-  });
-
-
-});
+// Process markdox
+markdox.process(program.args, program.output);
