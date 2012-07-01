@@ -16,8 +16,8 @@ exports.version = '0.0.1';
  *     parse(str)
  *     // => "wahoo"
  *
- * @param {String|Buffer} str to parse
- * @return {String}
+ * @param {String|Buffer} str String to parse
+ * @return {String} Persed string
  * @api public
  */
 

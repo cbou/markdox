@@ -1,1 +1,17 @@
-main
+# {{filename}}
+{{#javadoc}}
+{{#if isMethod}}
+## {{name}}()
+{{{description}}}
+{{#if paramTags}}
+### Params:
+{{#paramTags}}
+* **{{joinedTypes}}** *{{name}}* {{description}}{{/paramTags}}
+{{/if}}
+{{#if returnTags}}
+### Return:
+{{#returnTags}}
+* **{{joinedTypes}}** {{description}}{{/returnTags}}
+{{/if}}
+{{/if}}
+{{/javadoc}}

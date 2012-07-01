@@ -10,14 +10,14 @@ var program = require('commander')
   , async = require('async')
   , doxstrap = require('../')
   , fs = require('fs')
-  , docs = []
-  , basePath = process.cwd();
+  , docfiles = []
+  , formatter = require('../lib/formatter');
 
 // options
 
 program
   .version(doxstrap.version)
-  .option('-o, --output <filepath>', 'specify filepath to output [output.md]', String, 'output.md')
+  .option('-o, --outputfolder <folderpath>', 'specify filepath to output [/path/to/output]', String, process.cwd())
   .command('doxstrap [options]... files...');
 
 // examples
@@ -38,17 +38,32 @@ program.parse(process.argv);
 async.forEach(program.args, function(arg, callback){
 
   doxstrap.parse(arg, function(err, doc){
-    docs.push(doc);
+    var docfile = {
+      filename: arg,
+      javadoc: doc
+    };
+    docfiles.push(formatter.format(docfile));
     callback(err);
   });
 
 }, function (err) {
   console.log('Generation starting');
-
-  doxstrap.generate(docs, function(err, output){
-    fs.writeFile(basePath + '/' + program.output, output, 'utf-8', function(){
-      console.log('Generation finished');
+  async.forEach(docfiles, function(docfile){
+    doxstrap.generate(docfile, function(err, output){
+      if (err) {
+        throw err;
+      }
+      var path = program.outputfolder + '/' + docfile.filename + '.md';
+      console.log('write file ' + path);
+      console.log(output);
+      fs.writeFile(path, output, 'utf-8', function(err){
+        if (err) {
+          throw err;
+        }
+        console.log('Generation finished');
+      });
     });
   });
+
 
 });
