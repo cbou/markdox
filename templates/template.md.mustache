@@ -1,6 +1,5 @@
 {{#docfiles}}
-# {{filename}}
-
+<!-- Start {{filename}} -->
 ---
 {{#javadoc}}
 {{#if isMethod}}
@@ -17,6 +16,9 @@
 * **{{joinedTypes}}** {{description}}{{/returnTags}}
 {{/if}}
 ---
+{{else}}
+{{{description}}}
 {{/if}}
 {{/javadoc}}
+<!-- End {{filename}} -->
 {{/docfiles}}
