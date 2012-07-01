@@ -15,12 +15,12 @@
   }
   , "devDependencies": {
   }
-  , "keywords": ["documentation", "dox", "bootstrap", "twitter"]
+  , "keywords": ["documentation", "dox", "markdown"]
   , "repository": {
     "type": "git", 
     "url": "https://cbou@github.com/cbou/markdox.git"
   }
   , "main": "index"
-  , "license": "closed"
-  , "engines": { "node": ">= 0.6.8 < 0.7.0" }
+  , "license": "MIT"
+  , "engines": { "node": ">= 0.6.0" }
 }
