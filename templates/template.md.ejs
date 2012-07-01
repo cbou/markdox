@@ -1,0 +1,31 @@
+<% docfiles.forEach(function(doc) { %>
+
+  <!-- Start <%= doc.filename %> -->
+
+  <% doc.javadoc.forEach(function(comment) { %>
+    <% if (comment.isMethod) { %>
+
+      ## <%= comment.name %>()
+      <%= comment.description %>
+      <% if (comment.paramTags) { %>
+        ### Params: 
+        <% comment.paramTags.forEach(function(paramTag) { %>
+          * **<%= paramTag.joinedTypes %>** *<%= paramTag.name %>* <%= paramTag.description %>
+        <% }) %>
+      <% } %>
+
+      <% if (comment.returnTags) { %>
+        ### Return:
+        <% comment.returnTags.forEach(function(returnTag) { %>
+          * **<%= returnTag.joinedTypes %>** <%= returnTag.description %>
+        <% }) %>
+      <% } %>
+    ---
+    <% } else { %>
+      <%= comment.description %>
+    <% } %>
+
+    <!-- End <%= doc.filename %> -->
+  <% }) %>
+
+<% }) %>
