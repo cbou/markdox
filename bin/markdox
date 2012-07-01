@@ -54,13 +54,11 @@ async.forEach(program.args, function(arg, callback){
         throw err;
       }
       var path = program.outputfolder + '/' + docfile.filename + '.md';
-      console.log('write file ' + path);
-      console.log(output);
+      console.log('Write file ' + path);
       fs.writeFile(path, output, 'utf-8', function(err){
         if (err) {
           throw err;
         }
-        console.log('Generation finished');
       });
     });
   });
