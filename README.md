@@ -2,6 +2,8 @@ Markdox
 ========
 
 Markdox is a documentation generator based on [Dox](https://github.com/visionmedia/dox) and Markdown.
+You can use the command `markdox` or in Nodejs with `var markdox = require('markdox')`.
+Examples can be found under `examples/` directory.
 
 Installation
 ---
