@@ -17,7 +17,7 @@ var program = require('commander')
 
 program
   .version(doxstrap.version)
-  .option('-o, --output <filepath>', 'specify filepath to output [output.html]', String, 'output.html')
+  .option('-o, --output <filepath>', 'specify filepath to output [output.md]', String, 'output.md')
   .command('doxstrap [options]... files...');
 
 // examples
