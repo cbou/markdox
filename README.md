@@ -1,13 +1,13 @@
-Doxstrap
+Markdox
 ========
 
-Doxstrap is a documentation generator based on [Dox](https://github.com/visionmedia/dox) and [Twitter Bootstrap](http://twitter.github.com/bootstrap/).
+Markdox is a documentation generator based on [Dox](https://github.com/visionmedia/dox) and Markdown.
 
 Usage
 ---
 
-  $ doxstrap myfile.js
+  $ markdox myfile.js
 
   # or
 
-  $ doxstrap myfile1.js myfile2.js
+  $ markdox myfile1.js myfile2.js

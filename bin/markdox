@@ -8,7 +8,7 @@ var program = require('commander')
   , util = require('util')
   , format = util.format
   , async = require('async')
-  , doxstrap = require('../')
+  , markdox = require('../')
   , fs = require('fs')
   , docfiles = []
   , formatter = require('../lib/formatter');
@@ -16,17 +16,17 @@ var program = require('commander')
 // options
 
 program
-  .version(doxstrap.version)
+  .version(markdox.version)
   .option('-o, --outputfolder <folderpath>', 'specify filepath to output [/path/to/output]', String, process.cwd())
-  .command('doxstrap [options]... files...');
+  .command('markdox [options]... files...');
 
 // examples
 
 program.on('--help', function(){
   console.log('  Examples:');
   console.log('');
-  console.log('    $ doxstrap myfile.js');
-  console.log('    $ doxstrap myfile1.js myfile2.js');
+  console.log('    $ markdox myfile.js');
+  console.log('    $ markdox myfile1.js myfile2.js');
   console.log('');
 });
 
@@ -37,7 +37,7 @@ program.parse(process.argv);
 
 async.forEach(program.args, function(arg, callback){
 
-  doxstrap.parse(arg, function(err, doc){
+  markdox.parse(arg, function(err, doc){
     var docfile = {
       filename: arg,
       javadoc: doc
@@ -49,7 +49,7 @@ async.forEach(program.args, function(arg, callback){
 }, function (err) {
   console.log('Generation starting');
   async.forEach(docfiles, function(docfile){
-    doxstrap.generate(docfile, function(err, output){
+    markdox.generate(docfile, function(err, output){
       if (err) {
         throw err;
       }

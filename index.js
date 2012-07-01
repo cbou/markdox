@@ -1,1 +1,1 @@
-module.exports = require('./lib/doxstrap');
+module.exports = require('./lib/markdox');

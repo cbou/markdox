@@ -1,6 +1,6 @@
 {
-  "name": "doxstrap"
-  , "description": "Doxstrap is a documentation generator based on Dox and Twitter Bootstrap."
+  "name": "markdox"
+  , "description": "Markdox is a documentation generator based on Dox and Markdown."
   , "version": "0.1.0"
   , "author": "Charles Bourasseau <charles.bourasseau@gmail.com>"
   , "contributors": [
@@ -18,7 +18,7 @@
   , "keywords": ["documentation", "dox", "bootstrap", "twitter"]
   , "repository": {
     "type": "git", 
-    "url": "https://cbou@github.com/cbou/doxstrap.git"
+    "url": "https://cbou@github.com/cbou/markdox.git"
   }
   , "main": "index"
   , "license": "closed"
