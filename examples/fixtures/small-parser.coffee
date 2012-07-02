@@ -1,9 +1,13 @@
 ###*
- * # This file is an incredible parser.
+ * # The small parser
+ * 
+ * This is a small parser.
+ *
+ *    var parser = require('small-parser')
  ###
 
 
-###*
+###!
  * Library version.
  * 
  * @type {String}

@@ -1,31 +1,16 @@
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/a.js -->
+<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.js -->
 
 
 
+# The small parser
+
+This is a small parser.
+
+   var parser = require('small-parser')
 
 
-
-Library version.
-
-
-
-
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/a.js -->
-
-
-
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/b.js -->
-
-
-
-# This file is an incredible parser.
-
-
-
-
-Library version.
 
 
 
@@ -58,23 +43,29 @@ Parse the given `str`.
 
 
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/b.js -->
+<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.js -->
 
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/c.js -->
+<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.js -->
+
+
+
+# The parser
+
+This is a incredible parser.
+
+   var parser = require('dox-parser')
+
+Dox
+Copyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+MIT Licensed
 
 
 
 
 
 
-Module dependencies.
-
-
-
-
-Library version.
 
 
 
@@ -251,88 +242,21 @@ Escape the given `html`.
 
 
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/c.js -->
+<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.js -->
 
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/d.js -->
+<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.coffee -->
 
 
 
+# The small parser
 
-## parseTagTypes(str)
-Parse tag type string &quot;{Array|Object}&quot; etc.
+This is a small parser.
 
-
-### Params: 
-
-* **String** *str* 
+   var parser = require('small-parser')
 
 
-
-
-### Return:
-
-* **Array** 
-
-
----
-
-
-
-
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/d.js -->
-
-
-
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/titles.js -->
-
-
-
-Description.
-
-## Some examples
-
- foo
-
-Some longer thing
-for example:
-
- bar
-
-
-
-
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/titles.js -->
-
-
-
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/a.coffee -->
-
-
-
-
-
-
-Library version.
-
-
-
-
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/a.coffee -->
-
-
-
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/b.coffee -->
-
-
-
-# This file is an incredible parser.
-
-
-
-
-Library version.
 
 
 
@@ -365,23 +289,29 @@ Parse the given `str`.
 
 
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/b.coffee -->
+<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.coffee -->
 
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/c.coffee -->
+<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.coffee -->
+
+
+
+# The parser
+
+This is a incredible parser.
+
+   var parser = require('dox-parser')
+
+Dox
+Copyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+MIT Licensed
 
 
 
 
 
 
-Module dependencies.
-
-
-
-
-Library version.
 
 
 
@@ -522,41 +452,5 @@ Escape the given `html`.
 
 
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/c.coffee -->
-
-
-
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/d.coffee -->
-
-
-
-Parse tag type string &quot;{Array|Object}&quot; etc.
-
-
-
-
-
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/d.coffee -->
-
-
-
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/titles.coffee -->
-
-
-
-Description.
-
-## Some examples
-
- foo
-
-Some longer thing
-for example:
-
- bar
-
-
-
-
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/titles.coffee -->
+<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.coffee -->
 

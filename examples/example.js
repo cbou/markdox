@@ -5,16 +5,10 @@ var docFolder = __dirname + '/doc';
 
 // Fixtures
 var fixtures = [
-  __dirname + '/fixtures/a.js',
-  __dirname + '/fixtures/b.js',
-  __dirname + '/fixtures/c.js',
-  __dirname + '/fixtures/d.js',
-  __dirname + '/fixtures/titles.js',
-  __dirname + '/fixtures/a.coffee',
-  __dirname + '/fixtures/b.coffee',
-  __dirname + '/fixtures/c.coffee',
-  __dirname + '/fixtures/d.coffee',
-  __dirname + '/fixtures/titles.coffee',
+  __dirname + '/fixtures/small-parser.js',
+  __dirname + '/fixtures/dox-parser.js',
+  __dirname + '/fixtures/small-parser.coffee',
+  __dirname + '/fixtures/dox-parser.coffee',
 ];
 
 
