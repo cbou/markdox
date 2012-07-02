@@ -27,7 +27,7 @@ Quick Start
 Documentation
 ---
 
-Documentations can be find in the folder doc/ and generation with:
+Documentation is [here](https://github.com/cbou/markdox/blob/master/doc/api.md) and can be generate with:
 
     $ npm run-script documentation
 
