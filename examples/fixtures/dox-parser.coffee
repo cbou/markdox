@@ -4,7 +4,7 @@
  * 
  * This is a incredible parser.
  *
- *    var parser = require('dox-parser')
+ *     var parser = require('dox-parser')
  *
  * Dox
  * Copyright (c) 2010 TJ Holowaychuk <tj@vision-media.ca>

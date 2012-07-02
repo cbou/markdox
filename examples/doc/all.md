@@ -8,7 +8,7 @@
 
 This is a small parser.
 
-   var parser = require('small-parser')
+    var parser = require('small-parser')
 
 
 
@@ -55,7 +55,7 @@ Parse the given `str`.
 
 This is a incredible parser.
 
-   var parser = require('dox-parser')
+    var parser = require('dox-parser')
 
 Dox
 Copyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
@@ -254,7 +254,7 @@ Escape the given `html`.
 
 This is a small parser.
 
-   var parser = require('small-parser')
+    var parser = require('small-parser')
 
 
 
@@ -301,7 +301,7 @@ Parse the given `str`.
 
 This is a incredible parser.
 
-   var parser = require('dox-parser')
+    var parser = require('dox-parser')
 
 Dox
 Copyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;

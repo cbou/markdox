@@ -3,7 +3,7 @@
  * 
  * This is a small parser.
  *
- *    var parser = require('small-parser')
+ *     var parser = require('small-parser')
  ###
 
 

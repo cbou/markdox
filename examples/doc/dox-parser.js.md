@@ -8,7 +8,7 @@
 
 This is a incredible parser.
 
-   var parser = require('dox-parser')
+    var parser = require('dox-parser')
 
 Dox
 Copyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
