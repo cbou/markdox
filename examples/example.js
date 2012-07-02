@@ -10,6 +10,11 @@ var fixtures = [
   __dirname + '/fixtures/c.js',
   __dirname + '/fixtures/d.js',
   __dirname + '/fixtures/titles.js',
+  __dirname + '/fixtures/a.coffee',
+  __dirname + '/fixtures/b.coffee',
+  __dirname + '/fixtures/c.coffee',
+  __dirname + '/fixtures/d.coffee',
+  __dirname + '/fixtures/titles.coffee',
 ];
 
 

@@ -11,7 +11,7 @@
 
 
 
-## parse(path, options, callback)
+## parse(filepath, options, callback)
 Parses the given file.
 
 ### Examples:
@@ -22,7 +22,7 @@ Parses the given file.
 
 ### Params: 
 
-* **String** *path* Filepath to parse
+* **String** *filepath* Filepath to parse
 
 * **Object|Function** *options* The options or the callback (if there is not options)
 
