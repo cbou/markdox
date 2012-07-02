@@ -24,6 +24,44 @@ Quick Start
   
     $ markdox test/fixtures/a.js test/fixtures/b.js
 
+Javascript comments should be like this:
+
+```javascript
+/**
+ * Escape the given `html`.
+ *
+ * Examples:
+ *
+ *     utils.escape('<script></script>')
+ *     // => '&lt;script&gt;&lt;/script&gt;'
+ *
+ * @param {String} html string to be escaped
+ * @return {String} escaped html
+ * @api public
+ */
+```
+
+Coffee-script comments like this:
+
+```coffeescript
+###*
+ * Escape the given `html`.
+ *
+ * Examples:
+ *
+ *     utils.escape('<script></script>')
+ *     // => '&lt;script&gt;&lt;/script&gt;'
+ *
+ * @param {String} html string to be escaped
+ * @return {String} escaped html
+ * @api public
+###
+```
+
+Notice that the Markdown titles ###, #### (and the next title too) inside a Coffeescript comment won't work, because `###`  is the multiline comment. But it works for Javascript.
+
+More examples can be found in [examples/fixtures/](https://github.com/cbou/markdox/tree/master/examples/fixtures) and the results are in [examples/docs](https://github.com/cbou/markdox/tree/master/examples/docs).
+
 Documentation
 ---
 
