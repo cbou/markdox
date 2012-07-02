@@ -31,9 +31,6 @@ Parses the given file.
 
 
 
-### Return:
-
-
 ---
 
 
@@ -53,9 +50,6 @@ Generates the output for comments.
 * **Function** *callback* The callback, it gets two arguments (err, output)
 
 
-
-
-### Return:
 
 
 ---
@@ -82,9 +76,6 @@ Parses and generates the documentation for given files.
 * **Function** *callback* The callback, it gets two arguments (err, output)
 
 
-
-
-### Return:
 
 
 ---
