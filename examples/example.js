@@ -1,7 +1,7 @@
 var markdox = require('../lib/markdox');
 var async = require('async');
 var path = require('path');
-var docFolder = __dirname + '/doc';
+var docFolder = __dirname + '/docs';
 
 // Fixtures
 var fixtures = [
