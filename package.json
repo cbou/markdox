@@ -21,5 +21,6 @@
   }
   , "main": "index"
   , "license": "MIT"
+  , "scripts": { "documentation": "bin/markdox -o doc/api.md lib/markdox.js" }
   , "engines": { "node": ">= 0.6.0" }
 }

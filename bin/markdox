@@ -30,4 +30,6 @@ program.on('--help', function(){
 program.parse(process.argv);
 
 // Process markdox
-markdox.process(program.args, program.output);
+markdox.process(program.args, {output: program.output}, function(){
+  console.log('Documentation generated.');
+});

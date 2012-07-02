@@ -24,6 +24,13 @@ Quick Start
   
     $ markdox test/fixtures/a.js test/fixtures/b.js
 
+Documentation
+---
+
+Documentations can be find in the folder doc/ and generation with:
+
+    $ npm run-script documentation
+
 License
 --------
 
