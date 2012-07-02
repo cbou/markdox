@@ -7,22 +7,24 @@
 
       ## <?= comment.name ?>(<?= comment.paramStr ?>)
       <?= comment.description ?>
-      <? if (comment.paramTags.length > 0) { ?>
-        ### Params: 
-        <? comment.paramTags.forEach(function(paramTag) { ?>
-          * **<?= paramTag.joinedTypes ?>** *<?= paramTag.name ?>* <?= paramTag.description ?>
-        <? }) ?>
-      <? } ?>
-
-      <? if (comment.returnTags.length > 0) { ?>
-        ### Return:
-        <? comment.returnTags.forEach(function(returnTag) { ?>
-          * **<?= returnTag.joinedTypes ?>** <?= returnTag.description ?>
-        <? }) ?>
-      <? } ?>
     ---
     <? } else if (!comment.ignore) { ?>
+      ## <?= comment.name ?>
       <?= comment.description ?>
+    <? } ?>
+
+    <? if (comment.paramTags.length > 0) { ?>
+      ### Params: 
+      <? comment.paramTags.forEach(function(paramTag) { ?>
+        * **<?= paramTag.joinedTypes ?>** *<?= paramTag.name ?>* <?= paramTag.description ?>
+      <? }) ?>
+    <? } ?>
+
+    <? if (comment.returnTags.length > 0) { ?>
+      ### Return:
+      <? comment.returnTags.forEach(function(returnTag) { ?>
+        * **<?= returnTag.joinedTypes ?>** <?= returnTag.description ?>
+      <? }) ?>
     <? } ?>
   
   <? }) ?>
