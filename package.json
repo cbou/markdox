@@ -15,6 +15,7 @@
   }
   , "devDependencies": {
   }
+  , "bin": { "markdox": "./bin/markdox" }
   , "keywords": ["documentation", "dox", "markdown"]
   , "repository": {
     "type": "git", 
