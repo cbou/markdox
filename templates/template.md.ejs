@@ -1,31 +1,32 @@
-<% docfiles.forEach(function(doc) { %>
+<? docfiles.forEach(function(doc) { ?>
 
-  <!-- Start <%= doc.filename %> -->
+  <!-- Start <?= doc.filename ?> -->
 
-  <% doc.javadoc.forEach(function(comment) { %>
-    <% if (comment.isMethod) { %>
+  <? doc.javadoc.forEach(function(comment) { ?>
+    <? if (!comment.ignore && comment.isMethod) { ?>
 
-      ## <%= comment.name %>()
-      <%= comment.description %>
-      <% if (comment.paramTags) { %>
+      ## <?= comment.name ?>()
+      <?= comment.description ?>
+      <? if (comment.paramTags) { ?>
         ### Params: 
-        <% comment.paramTags.forEach(function(paramTag) { %>
-          * **<%= paramTag.joinedTypes %>** *<%= paramTag.name %>* <%= paramTag.description %>
-        <% }) %>
-      <% } %>
+        <? comment.paramTags.forEach(function(paramTag) { ?>
+          * **<?= paramTag.joinedTypes ?>** *<?= paramTag.name ?>* <?= paramTag.description ?>
+        <? }) ?>
+      <? } ?>
 
-      <% if (comment.returnTags) { %>
+      <? if (comment.returnTags) { ?>
         ### Return:
-        <% comment.returnTags.forEach(function(returnTag) { %>
-          * **<%= returnTag.joinedTypes %>** <%= returnTag.description %>
-        <% }) %>
-      <% } %>
+        <? comment.returnTags.forEach(function(returnTag) { ?>
+          * **<?= returnTag.joinedTypes ?>** <?= returnTag.description ?>
+        <? }) ?>
+      <? } ?>
     ---
-    <% } else { %>
-      <%= comment.description %>
-    <% } %>
+    <? } else if (!comment.ignore) { ?>
+      <?= comment.description ?>
+    <? } ?>
+  
+  <? }) ?>
 
-    <!-- End <%= doc.filename %> -->
-  <% }) %>
+  <!-- End <?= doc.filename ?> -->
 
-<% }) %>
+<? }) ?>
