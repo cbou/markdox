@@ -19,7 +19,7 @@ exports.version = '0.0.1';
 /**
  * Parse the given `str`.
  *
- * ### Examples:
+ * Examples:
  *
  *     parse(str)
  *     // => "wahoo"

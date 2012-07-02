@@ -20,7 +20,7 @@ This is a small parser.
 ## parse(str)
 Parse the given `str`.
 
-### Examples:
+## Examples
 
     parse(str)
     // =&gt; &quot;wahoo&quot;
@@ -342,7 +342,7 @@ Parse comments in the given string of `js`.
 ## parseComment(str)
 Parse the given comment `str`.
 
-## The comment object returned contains the following
+ The comment object returned contains the following:
 
  - `tags`  array of tag objects
  - `description` the first line of the comment

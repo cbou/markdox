@@ -20,7 +20,7 @@ This is a small parser.
 ## parse(str)
 Parse the given `str`.
 
-### Examples:
+## Examples
 
     parse(str)
     // =&gt; &quot;wahoo&quot;
