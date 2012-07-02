@@ -15,5 +15,3 @@ node_modules
 npm-debug.log
 
 output.md
-examples/doc/*
-!examples/doc/.gitkeep
