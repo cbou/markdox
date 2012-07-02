@@ -5,7 +5,7 @@
   <? doc.javadoc.forEach(function(comment) { ?>
     <? if (!comment.ignore && comment.isMethod) { ?>
 
-      ## <?= comment.name ?>()
+      ## <?= comment.name ?>(<?= comment.paramStr ?>)
       <?= comment.description ?>
       <? if (comment.paramTags.length > 0) { ?>
         ### Params: 

@@ -11,7 +11,7 @@
 
 
 
-## parse()
+## parse(path, options, callback)
 Parses the given file.
 
 ### Examples:
@@ -37,7 +37,7 @@ Parses the given file.
 
 
 
-## generate()
+## generate(docfiles, options, callback)
 Generates the output for comments.
 
 
@@ -58,7 +58,7 @@ Generates the output for comments.
 
 
 
-## process()
+## process(files, options, callback)
 Parses and generates the documentation for given files.
 
 ### Examples:
