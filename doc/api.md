@@ -11,6 +11,14 @@
 
 
 
+
+
+
+
+
+
+
+
 ## parse(filepath, options, callback)
 Parses the given file.
 
@@ -18,6 +26,9 @@ Parses the given file.
 
     var markdox = require('markdox');
     markdox.parse('/path/to/file.js', callback);
+
+---
+
 
 
 ### Params: 
@@ -31,14 +42,15 @@ Parses the given file.
 
 
 
----
-
 
 
 
 
 ## generate(docfiles, options, callback)
 Generates the output for comments.
+
+---
+
 
 
 ### Params: 
@@ -52,8 +64,6 @@ Generates the output for comments.
 
 
 
----
-
 
 
 
@@ -66,6 +76,9 @@ Parses and generates the documentation for given files.
     var markdox = require('markdox');
     markdox.parse('/path/to/file.js', callback);
 
+---
+
+
 
 ### Params: 
 
@@ -77,8 +90,6 @@ Parses and generates the documentation for given files.
 
 
 
-
----
 
 
 

@@ -6,7 +6,7 @@
   , "contributors": [
   ]
   , "dependencies": {
-      "dox": ">= 0.3.1"
+      "dox": "git+ssh://git://github.com/visionmedia/dox.git"
     , "commander": ">= 0.6.0"
     , "async": ">= 0.1.18"
     , "ejs": ">= 0.7.2"

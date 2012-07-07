@@ -4,11 +4,20 @@
 
 
 
+## 
 # The small parser
 
 This is a small parser.
 
     var parser = require('small-parser')
+
+
+
+
+
+
+
+
 
 
 
@@ -25,6 +34,9 @@ Parse the given `str`.
     parse(str)
     // =&gt; &quot;wahoo&quot;
 
+---
+
+
 
 ### Params: 
 
@@ -37,8 +49,6 @@ Parse the given `str`.
 
 * **String** Persed string
 
-
----
 
 
 
