@@ -1,12 +1,12 @@
 {
   "name": "markdox"
   , "description": "Markdox is a documentation generator based on Dox and Markdown."
-  , "version": "0.0.7"
+  , "version": "0.0.8"
   , "author": "Charles Bourasseau <charles.bourasseau@gmail.com>"
   , "contributors": [
   ]
   , "dependencies": {
-      "dox": "git+ssh://git://github.com/visionmedia/dox.git"
+      "dox": "https://github.com/visionmedia/dox/tarball/master"
     , "commander": ">= 0.6.0"
     , "async": ">= 0.1.18"
     , "ejs": ">= 0.7.2"
