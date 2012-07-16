@@ -19,6 +19,15 @@ Usage
     # or
     $ markdox myfile1.js myfile2.js
 
+or programmatically
+
+```javascript
+markdox.process(files, 'output.md', function(){
+  console.log('Documentation generated');
+});
+
+```
+
 Quick Start
 ---
   
