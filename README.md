@@ -73,7 +73,7 @@ Coffee-script comments like this:
 
 Notice that the Markdown titles `##`, `####` (and the next titles too) inside a Coffeescript comment won't work, because `###`  is the multiline comment. But it works for Javascript.
 
-In replacement to `#`, `###` ... you can write `h1`, `h2` ...
+In replacement to `#`, `###` (until `######`) you can write `h1`, `h2` (until `h6`), there will be replaced by `#`, `###` ...
 
 More examples can be found in [examples/fixtures/](https://github.com/cbou/markdox/tree/master/examples/fixtures) and the results are in [examples/docs](https://github.com/cbou/markdox/tree/master/examples/docs).
 
