@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Markdox : Doxstrap is a documentation generator based on Dox and Twitter Bootstrap." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Markdox</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/cbou/markdox">View on GitHub</a>
+
+          <h1 id="project_title">Markdox</h1>
+          <h2 id="project_tagline">Doxstrap is a documentation generator based on Dox and Twitter Bootstrap.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/cbou/markdox/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/cbou/markdox/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Markdox</h1>
+
+<p>Markdox is a documentation generator based on <a href="https://github.com/visionmedia/dox">Dox</a> and Markdown.</p>
+
+<p>You can use the command <code>markdox</code> or in Nodejs with <code>var markdox = require('markdox')</code>.</p>
+
+<p>Examples can be found under <code>examples/</code> directory.</p>
+
+<h2>Installation</h2>
+
+<pre><code>$ npm install -g markdox
+</code></pre>
+
+<h2>Usage</h2>
+
+<pre><code>$ markdox myfile.js
+# or
+$ markdox myfile1.js myfile2.js
+</code></pre>
+
+<p>or programmatically</p>
+
+<div class="highlight">
+<pre><span class="nx">markdox</span><span class="p">.</span><span class="nx">process</span><span class="p">(</span><span class="nx">files</span><span class="p">,</span> <span class="s1">'output.md'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Documentation generated'</span><span class="p">);</span>
+<span class="p">});</span>
+
+</pre>
+</div>
+
+
+<h2>Quick Start</h2>
+
+<pre><code>$ markdox test/fixtures/a.js test/fixtures/b.js
+</code></pre>
+
+<p>Here is the list of supported tags:</p>
+
+<ul>
+<li>
+<a href="https://github.com/author" class="user-mention">@author</a> author name <a href="mailto:email@example.com">email@example.com</a>
+</li>
+<li>
+<a href="https://github.com/Version" class="user-mention">@Version</a> 0.0.1</li>
+<li><a href="https://github.com/deprecated" class="user-mention">@deprecated</a></li>
+<li>
+<a href="https://github.com/Param" class="user-mention">@Param</a> {type} name Message</li>
+<li>@return {type} Message</li>
+<li>
+<a href="https://github.com/see" class="user-mention">@see</a> something</li>
+<li>
+<a href="https://github.com/name" class="user-mention">@name</a> name</li>
+<li>
+<a href="https://github.com/method" class="user-mention">@method</a> name</li>
+<li>
+<a href="https://github.com/Class" class="user-mention">@Class</a> name</li>
+<li>
+<a href="https://github.com/function" class="user-mention">@function</a> name</li>
+</ul><p>Javascript comments should be like this:</p>
+
+<div class="highlight">
+<pre><span class="cm">/**</span>
+<span class="cm"> * Escape the given `html`.</span>
+<span class="cm"> *</span>
+<span class="cm"> * ### Examples:</span>
+<span class="cm"> *</span>
+<span class="cm"> *     utils.escape('&lt;script&gt;&lt;/script&gt;')</span>
+<span class="cm"> *     // =&gt; '&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;'</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param {String} html string to be escaped</span>
+<span class="cm"> * @return {String} escaped html</span>
+<span class="cm"> * @api public</span>
+<span class="cm"> */</span>
+</pre>
+</div>
+
+
+<p>Coffee-script comments like this:</p>
+
+<div class="highlight">
+<pre><span class="cm">###*</span>
+<span class="cm"> * Escape the given `html`.</span>
+<span class="cm"> *</span>
+<span class="cm"> * h3 Examples:</span>
+<span class="cm"> *</span>
+<span class="cm"> *     utils.escape('&lt;script&gt;&lt;/script&gt;')</span>
+<span class="cm"> *     // =&gt; '&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;'</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param {String} html string to be escaped</span>
+<span class="cm"> * @return {String} escaped html</span>
+<span class="cm"> * @api public</span>
+<span class="cm">###</span>
+</pre>
+</div>
+
+
+<p>Notice that the Markdown titles <code>##</code>, <code>####</code> (and the next titles too) inside a Coffeescript comment won't work, because <code>###</code>  is the multiline comment. But it works for Javascript.</p>
+
+<p>In replacement to <code>#</code>, <code>###</code> (until <code>######</code>) you can write <code>h1</code>, <code>h2</code> (until <code>h6</code>), there will be replaced by <code>#</code>, <code>###</code> ...</p>
+
+<p>More examples can be found in <a href="https://github.com/cbou/markdox/tree/master/examples/fixtures">examples/fixtures/</a> and the results are in <a href="https://github.com/cbou/markdox/tree/master/examples/docs">examples/docs</a>.</p>
+
+<h2>Advanced Usage</h2>
+
+<p>Template and Formater of Markdox can be overriden:</p>
+
+<div class="highlight">
+<pre><span class="kd">var</span> <span class="nx">markdox</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'markdox'</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">output</span><span class="o">:</span> <span class="s1">'output.md'</span>
+  <span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">docfile</span><span class="p">){</span><span class="k">return</span> <span class="nx">docfile</span><span class="p">;}</span>
+  <span class="p">,</span> <span class="nx">template</span><span class="o">:</span> <span class="s1">'output.ejs'</span>
+<span class="p">};</span>
+
+<span class="nx">markdox</span><span class="p">.</span><span class="nx">process</span><span class="p">(</span><span class="nx">fixtures</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'File `all.md` generated with success'</span><span class="p">);</span>
+<span class="p">});</span>
+</pre>
+</div>
+
+
+<h2>Documentation</h2>
+
+<p>Documentation is <a href="https://github.com/cbou/markdox/blob/master/doc/api.md">here</a> and can be generate with:</p>
+
+<pre><code>$ npm run-script documentation
+</code></pre>
+
+<h2>License</h2>
+
+<p>(The MIT License)</p>
+
+<p>Copyright (c) 2012 Charles Bourasseau <a href="mailto:charles.bourasseau@gmail.com">charles.bourasseau@gmail.com</a></p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Markdox maintained by <a href="https://github.com/cbou">cbou</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-11322213-5");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
