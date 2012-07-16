@@ -17,7 +17,7 @@ var fixtures = [
 // One file per Javascript file
 async.forEach(fixtures, function(file, callback){
   var output = docFolder + '/' + path.basename(file) + '.md';
-  markdox.process(file, {output:output}, callback);
+  markdox.process(file, output, callback);
 }, function (err) {
   if (err) {
     throw err;
