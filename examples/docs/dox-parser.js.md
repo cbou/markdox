@@ -4,7 +4,14 @@
 
 
 
+
 ## 
+
+
+
+
+
+
 # The parser
 
 This is a incredible parser.
@@ -32,15 +39,22 @@ MIT Licensed
 
 
 
-
-
-
-
-
 ## parseComments(js)
+
+
+
+
+
+method
+
+
 Parse comments in the given string of `js`.
 
----
+
+
+
+
+
 
 
 
@@ -61,6 +75,14 @@ Parse comments in the given string of `js`.
 
 
 ## parseComment(str)
+
+
+
+
+
+method
+
+
 Parse the given comment `str`.
 
 ## The comment object returned contains the following
@@ -71,7 +93,11 @@ Parse the given comment `str`.
  - `content` both the description and the body
  - `isPrivate` true when &quot;@api private&quot; is used
 
----
+
+
+
+
+
 
 
 
@@ -92,9 +118,21 @@ Parse the given comment `str`.
 
 
 ## parseTag()
+
+
+
+
+
+method
+
+
 Parse tag string &quot;@param {Array} name description&quot; etc.
 
----
+
+
+
+
+
 
 
 
@@ -113,7 +151,14 @@ Parse tag string &quot;@param {Array} name description&quot; etc.
 
 
 
+
 ## 
+
+
+
+
+
+
 shouldn't fail
 
 
@@ -124,10 +169,27 @@ shouldn't fail
 
 
 
+
+
+
+
+
 ## parseTagTypes(str)
+
+
+
+
+
+method
+
+
 Parse tag type string &quot;{Array|Object}&quot; etc.
 
----
+
+
+
+
+
 
 
 
@@ -148,6 +210,14 @@ Parse tag type string &quot;{Array|Object}&quot; etc.
 
 
 ## parseCodeContext(str)
+
+
+
+
+
+method
+
+
 Parse the context from the given `str` of js.
 
 This method attempts to discover the context
@@ -162,7 +232,11 @@ supports:
   - properties
   - declarations
 
----
+
+
+
+
+
 
 
 
@@ -181,8 +255,22 @@ supports:
 
 
 
+
 ## escape
+
+
+
+
+
+function
+
+
 Escape the given `html`.
+
+
+
+
+
 
 
 

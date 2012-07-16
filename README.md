@@ -24,6 +24,19 @@ Quick Start
   
     $ markdox test/fixtures/a.js test/fixtures/b.js
 
+Here is the list of supported tags:
+
+ * @author author name <email@example.com>
+ * @version 0.0.1
+ * @deprecated
+ * @param {type} name Message
+ * @return {type} Message
+ * @see something
+ * @name name
+ * @method name
+ * @class name
+ * @function name
+
 Javascript comments should be like this:
 
 ```javascript
