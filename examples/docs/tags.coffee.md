@@ -35,13 +35,12 @@ Version: 0.0.1
 
 
 
-## helloWorld
+## helloWorld(message)
 
 
 
 This method log a given message to the console.
-
-## Examples
+### Examples:
 
     log('It works!');
 

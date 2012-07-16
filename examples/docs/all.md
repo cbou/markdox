@@ -1,75 +1,5 @@
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.js -->
-
-
-
-
-
-# The small parser
-
-This is a small parser.
-
-    var parser = require('small-parser')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## parse(str)
-
-
-
-Parse the given `str`.
-
-## Examples
-
-    parse(str)
-    // =&gt; &quot;wahoo&quot;
-
-
-
-
-
-
-
-
-
-
-
-### Params: 
-
-* **String|Buffer** *str* String to parse
-
-
-
-
-### Return:
-
-* **String** Persed string
-
-
-
-
-
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.js -->
-
-
-
 <!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.js -->
 
 
@@ -348,6 +278,76 @@ Escape the given `html`.
 
 
 
+<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.js -->
+
+
+
+
+
+# The small parser
+
+This is a small parser.
+
+    var parser = require('small-parser')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## parse(str)
+
+
+
+Parse the given `str`.
+
+## Examples
+
+    parse(str)
+    // =&gt; &quot;wahoo&quot;
+
+
+
+
+
+
+
+
+
+
+
+### Params: 
+
+* **String|Buffer** *str* String to parse
+
+
+
+
+### Return:
+
+* **String** Persed string
+
+
+
+
+
+<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.js -->
+
+
+
 <!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.coffee -->
 
 
@@ -415,6 +415,161 @@ Parse the given `str`.
 
 
 <!-- End /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.coffee -->
+
+
+
+<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/tags.js -->
+
+
+
+
+
+# log.js
+
+This file contains logging function.
+
+
+
+**Deprecated**
+
+
+
+Author: Charles Bourasseau <charles.bourasseau@gmail.com>
+
+
+
+Version: 0.0.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## helloWorld(message)
+
+
+
+This method log a given message to the console.
+
+### Examples:
+
+    log('It works!');
+
+
+
+
+
+
+
+
+
+See: console.log()
+
+
+
+### Params: 
+
+* **String** *message* The message to log
+
+
+
+
+### Return:
+
+* **Boolean** True if it success, false if not
+
+
+
+
+
+
+
+<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/tags.js -->
+
+
+
+<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/tags.coffee -->
+
+
+
+
+
+# log.js
+
+This file contains logging function.
+
+
+
+**Deprecated**
+
+
+
+Author: Charles Bourasseau <charles.bourasseau@gmail.com>
+
+
+
+Version: 0.0.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## helloWorld(message)
+
+
+
+This method log a given message to the console.
+### Examples:
+
+    log('It works!');
+
+
+
+
+
+
+
+
+
+See: console.log()
+
+
+
+### Params: 
+
+* **String** *message* The message to log
+
+
+
+
+### Return:
+
+* **Boolean** True if it success, false if not
+
+
+
+
+
+
+
+<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/tags.coffee -->
 
 
 
@@ -671,160 +826,4 @@ Escape the given `html`.
 
 
 <!-- End /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.coffee -->
-
-
-
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/tags.js -->
-
-
-
-
-
-# log.js
-
-This file contains logging function.
-
-
-
-**Deprecated**
-
-
-
-Author: Charles Bourasseau <charles.bourasseau@gmail.com>
-
-
-
-Version: 0.0.1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## helloWorld(message)
-
-
-
-This method log a given message to the console.
-
-### Examples:
-
-    log('It works!');
-
-
-
-
-
-
-
-
-
-See: console.log()
-
-
-
-### Params: 
-
-* **String** *message* The message to log
-
-
-
-
-### Return:
-
-* **Boolean** True if it success, false if not
-
-
-
-
-
-
-
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/tags.js -->
-
-
-
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/tags.coffee -->
-
-
-
-
-
-# log.js
-
-This file contains logging function.
-
-
-
-**Deprecated**
-
-
-
-Author: Charles Bourasseau <charles.bourasseau@gmail.com>
-
-
-
-Version: 0.0.1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## helloWorld
-
-
-
-This method log a given message to the console.
-
-## Examples
-
-    log('It works!');
-
-
-
-
-
-
-
-
-
-See: console.log()
-
-
-
-### Params: 
-
-* **String** *message* The message to log
-
-
-
-
-### Return:
-
-* **Boolean** True if it success, false if not
-
-
-
-
-
-
-
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/tags.coffee -->
 

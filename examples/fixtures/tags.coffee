@@ -15,7 +15,7 @@
 ###
  * This method log a given message to the console.
  *
- * Examples:
+ * h3 Examples:
  *
  *     log('It works!');
  *
@@ -23,6 +23,7 @@
  * @return {Boolean} True if it success, false if not
  * @see console.log()
  * @name helloWorld
+ * @method
 ###
 log = (message) ->
   # comment
