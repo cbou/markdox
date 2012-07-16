@@ -77,6 +77,25 @@ In replacement to `#`, `###` (until `######`) you can write `h1`, `h2` (until `h
 
 More examples can be found in [examples/fixtures/](https://github.com/cbou/markdox/tree/master/examples/fixtures) and the results are in [examples/docs](https://github.com/cbou/markdox/tree/master/examples/docs).
 
+Advanced Usage
+---
+
+Template and Formater of Markdox can be overriden:
+
+```javascript
+var markdox = require('markdox');
+
+var options = {
+  output: 'output.md'
+  , formatter: function(docfile){return docfile;}
+  , template: 'output.ejs'
+};
+
+markdox.process(fixtures, options, function(){
+  console.log('File `all.md` generated with success');
+});
+```
+
 Documentation
 ---
 
