@@ -67,7 +67,7 @@ Generates the output for comments.
 
 * **Object** *docfiles* Comments to render
 
-* **Object|Function** *options* The options or the callback (if there is not options)
+* **Object|Function|String** *options* The options or the callback (if there is not options)
 
 * **Function** *callback* The callback, it gets two arguments (err, output)
 
@@ -104,7 +104,7 @@ Parses and generates the documentation for given files.
 
 * **String|Array** *files* Files to process
 
-* **Object|Function** *options* The options or the callback (if there is not options)
+* **Object|Function|String** *options* The options or the callback (if there is not options) or the output option
 
 * **Function** *callback* The callback, it gets two arguments (err, output)
 
