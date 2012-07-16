@@ -5,12 +5,6 @@
 
 
 
-## 
-
-
-
-
-
 
 # The parser
 
@@ -39,13 +33,11 @@ MIT Licensed
 
 
 
+
+
+
 ## parseComments(js)
 
-
-
-
-
-method
 
 
 Parse comments in the given string of `js`.
@@ -55,6 +47,10 @@ Parse comments in the given string of `js`.
 
 
 
+
+
+
+See: exports.parseComment
 
 
 
@@ -74,13 +70,9 @@ Parse comments in the given string of `js`.
 
 
 
+
 ## parseComment(str)
 
-
-
-
-
-method
 
 
 Parse the given comment `str`.
@@ -101,6 +93,10 @@ Parse the given comment `str`.
 
 
 
+See: exports.parseTag
+
+
+
 ### Params: 
 
 * **String** *str* 
@@ -117,16 +113,14 @@ Parse the given comment `str`.
 
 
 
+
 ## parseTag()
 
 
 
-
-
-method
-
-
 Parse tag string &quot;@param {Array} name description&quot; etc.
+
+
 
 
 
@@ -152,14 +146,11 @@ Parse tag string &quot;@param {Array} name description&quot; etc.
 
 
 
-## 
-
-
-
-
-
 
 shouldn't fail
+
+
+
 
 
 
@@ -178,12 +169,9 @@ shouldn't fail
 
 
 
-
-
-method
-
-
 Parse tag type string &quot;{Array|Object}&quot; etc.
+
+
 
 
 
@@ -209,13 +197,9 @@ Parse tag type string &quot;{Array|Object}&quot; etc.
 
 
 
+
 ## parseCodeContext(str)
 
-
-
-
-
-method
 
 
 Parse the context from the given `str` of js.
@@ -231,6 +215,8 @@ supports:
   - methods
   - properties
   - declarations
+
+
 
 
 
@@ -256,16 +242,14 @@ supports:
 
 
 
-## escape
 
+## escape(html)
 
-
-
-
-function
 
 
 Escape the given `html`.
+
+
 
 
 

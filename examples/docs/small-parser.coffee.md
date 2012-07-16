@@ -5,12 +5,6 @@
 
 
 
-## 
-
-
-
-
-
 
 # The small parser
 
@@ -33,13 +27,11 @@ This is a small parser.
 
 
 
+
+
+
 ## parse(str)
 
-
-
-
-
-method
 
 
 Parse the given `str`.
@@ -48,6 +40,8 @@ Parse the given `str`.
 
     parse(str)
     // =&gt; &quot;wahoo&quot;
+
+
 
 
 

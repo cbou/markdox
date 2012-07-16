@@ -1,6 +1,6 @@
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/tags.js -->
+<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/tags.coffee -->
 
 
 
@@ -35,13 +35,13 @@ Version: 0.0.1
 
 
 
-## helloWorld(message)
+## helloWorld
 
 
 
 This method log a given message to the console.
 
-### Examples:
+## Examples
 
     log('It works!');
 
@@ -74,5 +74,5 @@ See: console.log()
 
 
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/tags.js -->
+<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/tags.coffee -->
 
