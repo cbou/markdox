@@ -2,10 +2,6 @@
 
 <!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.js -->
 
-
-
-
-
 # The parser
 
 This is a incredible parser.
@@ -16,64 +12,21 @@ Dox
 Copyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
 MIT Licensed
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## parseComments(js)
-
-
 
 Parse comments in the given string of `js`.
 
-
-
-
-
-
-
-
-
 See: exports.parseComment
-
-
 
 ### Params: 
 
 * **String** *js* 
 
-
-
-
 ### Return:
 
 * **Array** 
 
-
-
-
-
-
-
 ## parseComment(str)
-
-
 
 Parse the given comment `str`.
 
@@ -85,122 +38,43 @@ Parse the given comment `str`.
  - `content` both the description and the body
  - `isPrivate` true when &quot;@api private&quot; is used
 
-
-
-
-
-
-
-
-
 See: exports.parseTag
-
-
 
 ### Params: 
 
 * **String** *str* 
 
-
-
-
 ### Return:
 
 * **Object** 
 
-
-
-
-
-
-
 ## parseTag()
 
-
-
 Parse tag string &quot;@param {Array} name description&quot; etc.
-
-
-
-
-
-
-
-
-
-
 
 ### Params: 
 
 * **String** ** 
 
-
-
-
 ### Return:
 
 * **Object** 
 
-
-
-
-
-
-
 shouldn't fail
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## parseTagTypes(str)
 
-
-
 Parse tag type string &quot;{Array|Object}&quot; etc.
-
-
-
-
-
-
-
-
-
-
 
 ### Params: 
 
 * **String** *str* 
 
-
-
-
 ### Return:
 
 * **Array** 
 
-
-
-
-
-
-
 ## parseCodeContext(str)
-
-
 
 Parse the context from the given `str` of js.
 
@@ -216,63 +90,25 @@ supports:
   - properties
   - declarations
 
-
-
-
-
-
-
-
-
-
-
 ### Params: 
 
 * **String** *str* 
-
-
-
 
 ### Return:
 
 * **Object** 
 
-
-
-
-
-
-
 ## escape(html)
 
-
-
 Escape the given `html`.
-
-
-
-
-
-
-
-
-
-
 
 ### Params: 
 
 * **String** *html* 
 
-
-
-
 ### Return:
 
 * **String** 
-
-
-
-
 
 <!-- End /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.js -->
 
