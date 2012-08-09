@@ -1,7 +1,7 @@
 Markdox
 ========
 
-Markdox is a documentation generator based on [Dox](https://github.com/visionmedia/dox) and Markdown.
+Markdox is a documentation generator based on [Dox](https://github.com/visionmedia/dox) and Markdown with support for JavaScript, CoffeeScript and IcedCoffeeScript.
 
 You can use the command `markdox` or in Nodejs with `var markdox = require('markdox')`.
 
@@ -63,7 +63,7 @@ Javascript comments should be like this:
  */
 ```
 
-Coffee-script comments like this:
+CoffeeScript and IcedCoffeeScript comments:
 
 ```coffeescript
 ###*
@@ -89,7 +89,7 @@ More examples can be found in [examples/fixtures/](https://github.com/cbou/markd
 Advanced Usage
 ---
 
-Template and Formater of Markdox can be overriden:
+Template, Formater and Compiler of Markdox can be overriden:
 
 ```javascript
 var markdox = require('markdox');
@@ -97,6 +97,9 @@ var markdox = require('markdox');
 var options = {
   output: 'output.md'
   , formatter: function(docfile){return docfile;}
+  , compiler: function(filepath, data){
+    return myCustomCompiler(data);
+  }
   , template: 'output.ejs'
 };
 
