@@ -2,17 +2,7 @@
 
 <!-- Start lib/markdox.js -->
 
-
-
-
-
-
-
-
-
 ## parse(filepath, options, callback)
-
-
 
 Parses the given file.
 
@@ -20,16 +10,6 @@ Parses the given file.
 
     var markdox = require('markdox');
     markdox.parse('/path/to/file.js', callback);
-
-
-
-
-
-
-
-
-
-
 
 ### Params: 
 
@@ -39,29 +19,9 @@ Parses the given file.
 
 * **Function** *callback* The callback, it gets two arguments (err, result)
 
-
-
-
-
-
-
-
-
 ## generate(docfiles, options, callback)
 
-
-
 Generates the output for comments.
-
-
-
-
-
-
-
-
-
-
 
 ### Params: 
 
@@ -71,17 +31,7 @@ Generates the output for comments.
 
 * **Function** *callback* The callback, it gets two arguments (err, output)
 
-
-
-
-
-
-
-
-
 ## process(files, options, callback)
-
-
 
 Parses and generates the documentation for given files.
 
@@ -90,16 +40,6 @@ Parses and generates the documentation for given files.
     var markdox = require('markdox');
     markdox.parse('/path/to/file.js', callback);
 
-
-
-
-
-
-
-
-
-
-
 ### Params: 
 
 * **String|Array** *files* Files to process
@@ -107,12 +47,6 @@ Parses and generates the documentation for given files.
 * **Object|Function|String** *options* The options or the callback (if there is not options) or the output option
 
 * **Function** *callback* The callback, it gets two arguments (err, output)
-
-
-
-
-
-
 
 <!-- End lib/markdox.js -->
 

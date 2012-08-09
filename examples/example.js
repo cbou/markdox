@@ -11,6 +11,7 @@ var fixtures = [
   __dirname + '/fixtures/dox-parser.coffee',
   __dirname + '/fixtures/tags.js',
   __dirname + '/fixtures/tags.coffee',
+  __dirname + '/fixtures/iced.iced',
 ];
 
 
