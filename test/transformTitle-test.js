@@ -8,6 +8,8 @@ describe('Markdox', function(){
 
     markdox.process(file, function(err, output){
       should.not.exist(err);
+
+      output.should.match(/\n# My first title/);
       output.should.match(/\n## My second title/);
 
       done();
