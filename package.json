@@ -15,6 +15,8 @@
     , "iced-coffee-script": ">= 1.3.3d"
   }
   , "devDependencies": {
+      "mocha": ">= 1.3.2"
+    , "should": ">= 1.1.0"
   }
   , "bin": { "markdox": "./bin/markdox" }
   , "keywords": ["documentation", "dox", "markdown"]
@@ -26,6 +28,7 @@
   , "license": "MIT"
   , "scripts": { 
     "documentation": "bin/markdox -o doc/api.md lib/markdox.js"
+    , "test": "./node_modules/mocha/bin/mocha test/*-test.js"
     , "examples": "node examples/example.js"
   }
   , "engines": { "node": ">= 0.6.0" }
