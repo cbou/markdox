@@ -31,9 +31,10 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>Markdox</h1>
+        <h1>Markdox <a href="http://travis-ci.org/cbou/markdox"><img src="https://secure.travis-ci.org/cbou/markdox.png" alt="Build Status"></a>
+</h1>
 
-<p>Markdox is a documentation generator based on <a href="https://github.com/visionmedia/dox">Dox</a> and Markdown.</p>
+<p>Markdox is a documentation generator based on <a href="https://github.com/visionmedia/dox">Dox</a> and Markdown with support for JavaScript, CoffeeScript and IcedCoffeeScript.</p>
 
 <p>You can use the command <code>markdox</code> or in Nodejs with <code>var markdox = require('markdox')</code>.</p>
 
@@ -53,14 +54,10 @@ $ markdox myfile1.js myfile2.js
 
 <p>or programmatically</p>
 
-<div class="highlight">
-<pre><span class="nx">markdox</span><span class="p">.</span><span class="nx">process</span><span class="p">(</span><span class="nx">files</span><span class="p">,</span> <span class="s1">'output.md'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+<div class="highlight"><pre><span class="nx">markdox</span><span class="p">.</span><span class="nx">process</span><span class="p">(</span><span class="nx">files</span><span class="p">,</span> <span class="s1">'output.md'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Documentation generated'</span><span class="p">);</span>
 <span class="p">});</span>
-
-</pre>
-</div>
-
+</pre></div>
 
 <h2>Quick Start</h2>
 
@@ -78,7 +75,8 @@ $ markdox myfile1.js myfile2.js
 <li><a href="https://github.com/deprecated" class="user-mention">@deprecated</a></li>
 <li>
 <a href="https://github.com/Param" class="user-mention">@Param</a> {type} name Message</li>
-<li>@return {type} Message</li>
+<li>
+<a href="https://github.com/return" class="user-mention">@return</a> {type} Message</li>
 <li>
 <a href="https://github.com/see" class="user-mention">@see</a> something</li>
 <li>
@@ -91,8 +89,7 @@ $ markdox myfile1.js myfile2.js
 <a href="https://github.com/function" class="user-mention">@function</a> name</li>
 </ul><p>Javascript comments should be like this:</p>
 
-<div class="highlight">
-<pre><span class="cm">/**</span>
+<div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> * Escape the given `html`.</span>
 <span class="cm"> *</span>
 <span class="cm"> * ### Examples:</span>
@@ -104,14 +101,11 @@ $ markdox myfile1.js myfile2.js
 <span class="cm"> * @return {String} escaped html</span>
 <span class="cm"> * @api public</span>
 <span class="cm"> */</span>
-</pre>
-</div>
+</pre></div>
 
+<p>CoffeeScript and IcedCoffeeScript comments:</p>
 
-<p>Coffee-script comments like this:</p>
-
-<div class="highlight">
-<pre><span class="cm">###*</span>
+<div class="highlight"><pre><span class="cm">###*</span>
 <span class="cm"> * Escape the given `html`.</span>
 <span class="cm"> *</span>
 <span class="cm"> * h3 Examples:</span>
@@ -123,9 +117,7 @@ $ markdox myfile1.js myfile2.js
 <span class="cm"> * @return {String} escaped html</span>
 <span class="cm"> * @api public</span>
 <span class="cm">###</span>
-</pre>
-</div>
-
+</pre></div>
 
 <p>Notice that the Markdown titles <code>##</code>, <code>####</code> (and the next titles too) inside a Coffeescript comment won't work, because <code>###</code>  is the multiline comment. But it works for Javascript.</p>
 
@@ -135,23 +127,23 @@ $ markdox myfile1.js myfile2.js
 
 <h2>Advanced Usage</h2>
 
-<p>Template and Formater of Markdox can be overriden:</p>
+<p>Template, Formater and Compiler of Markdox can be overriden:</p>
 
-<div class="highlight">
-<pre><span class="kd">var</span> <span class="nx">markdox</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'markdox'</span><span class="p">);</span>
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">markdox</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'markdox'</span><span class="p">);</span>
 
 <span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
   <span class="nx">output</span><span class="o">:</span> <span class="s1">'output.md'</span>
   <span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">docfile</span><span class="p">){</span><span class="k">return</span> <span class="nx">docfile</span><span class="p">;}</span>
+  <span class="p">,</span> <span class="nx">compiler</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">filepath</span><span class="p">,</span> <span class="nx">data</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">myCustomCompiler</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+  <span class="p">}</span>
   <span class="p">,</span> <span class="nx">template</span><span class="o">:</span> <span class="s1">'output.ejs'</span>
 <span class="p">};</span>
 
 <span class="nx">markdox</span><span class="p">.</span><span class="nx">process</span><span class="p">(</span><span class="nx">fixtures</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'File `all.md` generated with success'</span><span class="p">);</span>
 <span class="p">});</span>
-</pre>
-</div>
-
+</pre></div>
 
 <h2>Documentation</h2>
 
