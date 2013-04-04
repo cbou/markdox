@@ -40,6 +40,7 @@ Here is the list of supported tags:
  * @deprecated
  * @param {type} name Message
  * @return {type} Message
+ * @throws {type} Message
  * @see something
  * @name name
  * @method name
