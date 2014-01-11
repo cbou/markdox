@@ -90,7 +90,9 @@ More examples can be found in [examples/fixtures/](https://github.com/cbou/markd
 Advanced Usage
 ---
 
-Template, Formater and Compiler of Markdox can be overriden:
+Template, Formater and Compiler of Markdox can be overriden.
+
+Nevertheless default formatter, template and compiler are available under `markdox.defaultFormatter`, `markdox.defaultCompiler`, `markdox.defaultTemplate`.
 
 ```javascript
 var markdox = require('markdox');
