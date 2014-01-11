@@ -3,7 +3,7 @@ Markdox [![Build Status](https://secure.travis-ci.org/cbou/markdox.png)](http://
 
 Markdox is a documentation generator based on [Dox](https://github.com/visionmedia/dox) and Markdown with support for JavaScript, CoffeeScript and IcedCoffeeScript.
 
-You can use the command `markdox` or in Nodejs with `var markdox = require('markdox')`.
+It can be used from the command `markdox` or in NodeJS with `var markdox = require('markdox')`.
 
 Examples can be found under `examples/` directory.
 
@@ -83,7 +83,7 @@ CoffeeScript and IcedCoffeeScript comments:
 
 Notice that the Markdown titles `##`, `####` (and the next titles too) inside a Coffeescript comment won't work, because `###`  is the multiline comment. But it works for Javascript.
 
-In replacement to `#`, `###` (until `######`) you can write `h1`, `h2` (until `h6`), there will be replaced by `#`, `###` ...
+In replacement to `#`, `###` (until `######`) it is possible to write `h1`, `h2` (until `h6`), there will be replaced by `#`, `###` ...
 
 More examples can be found in [examples/fixtures/](https://github.com/cbou/markdox/tree/master/examples/fixtures) and the results are in [examples/docs](https://github.com/cbou/markdox/tree/master/examples/docs).
 
