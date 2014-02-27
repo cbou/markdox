@@ -28,6 +28,8 @@ markdox.process(files, 'output.md', function(){
 
 ```
 
+or with the [gulp plugin](https://github.com/gberger/gulp-markdox)
+
 Quick Start
 ---
   
