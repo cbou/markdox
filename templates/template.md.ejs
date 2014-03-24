@@ -33,8 +33,7 @@
       <? if (comment.paramTags.length > 0) { ?>
         ### Params: 
         <? comment.paramTags.forEach(function(paramTag) { ?>
-          * **<?= paramTag.joinedTypes ?>** *<?= paramTag.name ?>* <?= paramTag.description ?>
-        <? }) ?>
+          * **<?= paramTag.joinedTypes ?>** *<?= paramTag.name ?>* <?= paramTag.description ?><? }) ?>
       <? } ?>
 
       <? if (comment.returnTags.length > 0) { ?>

@@ -1,6 +1,6 @@
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/tags.coffee -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/tags.coffee -->
 
 # log.js
 
@@ -29,5 +29,5 @@ See: console.log()
 
 * **Boolean** True if it success, false if not
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/tags.coffee -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/tags.coffee -->
 

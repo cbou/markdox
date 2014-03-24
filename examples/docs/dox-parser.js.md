@@ -1,6 +1,6 @@
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.js -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.js -->
 
 # The parser
 
@@ -9,10 +9,10 @@ This is a incredible parser.
     var parser = require('dox-parser')
 
 Dox
-Copyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+Copyright (c) 2010 TJ Holowaychuk <tj@vision-media.ca>
 MIT Licensed
 
-## parseComments(js)
+## parseComments(js, js2)
 
 Parse comments in the given string of `js`.
 
@@ -21,6 +21,7 @@ See: exports.parseComment
 ### Params: 
 
 * **String** *js* 
+* **String** *js2* 
 
 ### Return:
 
@@ -30,13 +31,13 @@ See: exports.parseComment
 
 Parse the given comment `str`.
 
-## The comment object returned contains the following
+The comment object returned contains the following:
 
  - `tags`  array of tag objects
  - `description` the first line of the comment
  - `body` lines following the description
  - `content` both the description and the body
- - `isPrivate` true when &quot;@api private&quot; is used
+ - `isPrivate` true when "@api private" is used
 
 See: exports.parseTag
 
@@ -50,7 +51,7 @@ See: exports.parseTag
 
 ## parseTag()
 
-Parse tag string &quot;@param {Array} name description&quot; etc.
+Parse tag string "@param {Array} name description" etc.
 
 ### Params: 
 
@@ -64,7 +65,7 @@ shouldn't fail
 
 ## parseTagTypes(str)
 
-Parse tag type string &quot;{Array|Object}&quot; etc.
+Parse tag type string "{Array|Object}" etc.
 
 ### Params: 
 
@@ -110,5 +111,5 @@ Escape the given `html`.
 
 * **String** 
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.js -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.js -->
 

@@ -27,12 +27,13 @@ exports.version = '0.0.5';
  * Parse comments in the given string of `js`.
  *
  * @param {String} js
+ * @param {String} js2
  * @return {Array}
  * @see exports.parseComment
  * @api public
  */
 
-exports.parseComments = function(js){
+exports.parseComments = function(js, js2){
   var comments = []
     , comment
     , buf = ''

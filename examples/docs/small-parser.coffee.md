@@ -1,6 +1,6 @@
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.coffee -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/small-parser.coffee -->
 
 # The small parser
 
@@ -12,10 +12,10 @@ This is a small parser.
 
 Parse the given `str`.
 
-## Examples
+Examples:
 
     parse(str)
-    // =&gt; &quot;wahoo&quot;
+    // => "wahoo"
 
 ### Params: 
 
@@ -25,5 +25,5 @@ Parse the given `str`.
 
 * **String** Persed string
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.coffee -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/small-parser.coffee -->
 

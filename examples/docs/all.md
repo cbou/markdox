@@ -1,6 +1,6 @@
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.js -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/small-parser.js -->
 
 # The small parser
 
@@ -12,10 +12,10 @@ This is a small parser.
 
 Parse the given `str`.
 
-## Examples
+Examples:
 
     parse(str)
-    // =&gt; &quot;wahoo&quot;
+    // => "wahoo"
 
 ### Params: 
 
@@ -25,9 +25,9 @@ Parse the given `str`.
 
 * **String** Persed string
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.js -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/small-parser.js -->
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.js -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.js -->
 
 # The parser
 
@@ -36,10 +36,10 @@ This is a incredible parser.
     var parser = require('dox-parser')
 
 Dox
-Copyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+Copyright (c) 2010 TJ Holowaychuk <tj@vision-media.ca>
 MIT Licensed
 
-## parseComments(js)
+## parseComments(js, js2)
 
 Parse comments in the given string of `js`.
 
@@ -48,6 +48,7 @@ See: exports.parseComment
 ### Params: 
 
 * **String** *js* 
+* **String** *js2* 
 
 ### Return:
 
@@ -57,13 +58,13 @@ See: exports.parseComment
 
 Parse the given comment `str`.
 
-## The comment object returned contains the following
+The comment object returned contains the following:
 
  - `tags`  array of tag objects
  - `description` the first line of the comment
  - `body` lines following the description
  - `content` both the description and the body
- - `isPrivate` true when &quot;@api private&quot; is used
+ - `isPrivate` true when "@api private" is used
 
 See: exports.parseTag
 
@@ -77,7 +78,7 @@ See: exports.parseTag
 
 ## parseTag()
 
-Parse tag string &quot;@param {Array} name description&quot; etc.
+Parse tag string "@param {Array} name description" etc.
 
 ### Params: 
 
@@ -91,7 +92,7 @@ shouldn't fail
 
 ## parseTagTypes(str)
 
-Parse tag type string &quot;{Array|Object}&quot; etc.
+Parse tag type string "{Array|Object}" etc.
 
 ### Params: 
 
@@ -137,9 +138,9 @@ Escape the given `html`.
 
 * **String** 
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.js -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.js -->
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.coffee -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/small-parser.coffee -->
 
 # The small parser
 
@@ -151,10 +152,10 @@ This is a small parser.
 
 Parse the given `str`.
 
-## Examples
+Examples:
 
     parse(str)
-    // =&gt; &quot;wahoo&quot;
+    // => "wahoo"
 
 ### Params: 
 
@@ -164,9 +165,9 @@ Parse the given `str`.
 
 * **String** Persed string
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/small-parser.coffee -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/small-parser.coffee -->
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.coffee -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.coffee -->
 
 # The parser
 
@@ -175,7 +176,7 @@ This is a incredible parser.
     var parser = require('dox-parser')
 
 Dox
-Copyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+Copyright (c) 2010 TJ Holowaychuk <tj@vision-media.ca>
 MIT Licensed
 
 ## parseComments(js)
@@ -202,7 +203,7 @@ Parse the given comment `str`.
  - `description` the first line of the comment
  - `body` lines following the description
  - `content` both the description and the body
- - `isPrivate` true when &quot;@api private&quot; is used
+ - `isPrivate` true when "@api private" is used
 
 See: exports.parseTag
 
@@ -216,7 +217,7 @@ See: exports.parseTag
 
 ## parseTag()
 
-Parse tag string &quot;@param {Array} name description&quot; etc.
+Parse tag string "@param {Array} name description" etc.
 
 ### Params: 
 
@@ -228,7 +229,7 @@ Parse tag string &quot;@param {Array} name description&quot; etc.
 
 ## parseTagTypes(str)
 
-Parse tag type string &quot;{Array|Object}&quot; etc.
+Parse tag type string "{Array|Object}" etc.
 
 ### Params: 
 
@@ -272,9 +273,9 @@ Escape the given `html`.
 
 * **String** 
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.coffee -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.coffee -->
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/tags.js -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/tags.js -->
 
 # log.js
 
@@ -304,9 +305,9 @@ See: console.log()
 
 * **Boolean** True if it success, false if not
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/tags.js -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/tags.js -->
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/tags.coffee -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/tags.coffee -->
 
 # log.js
 
@@ -335,9 +336,9 @@ See: console.log()
 
 * **Boolean** True if it success, false if not
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/tags.coffee -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/tags.coffee -->
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/iced.iced -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/iced.iced -->
 
 ## search
 
@@ -346,8 +347,7 @@ Search on Twitter with a single keyword
 ### Params: 
 
 * **String** *keyword* The keyword
-
 * **Function** *callback* The callback function with arguments (result).
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/iced.iced -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/iced.iced -->
 

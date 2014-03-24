@@ -1,6 +1,6 @@
 
 
-<!-- Start /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.coffee -->
+<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.coffee -->
 
 # The parser
 
@@ -9,7 +9,7 @@ This is a incredible parser.
     var parser = require('dox-parser')
 
 Dox
-Copyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+Copyright (c) 2010 TJ Holowaychuk <tj@vision-media.ca>
 MIT Licensed
 
 ## parseComments(js)
@@ -36,7 +36,7 @@ Parse the given comment `str`.
  - `description` the first line of the comment
  - `body` lines following the description
  - `content` both the description and the body
- - `isPrivate` true when &quot;@api private&quot; is used
+ - `isPrivate` true when "@api private" is used
 
 See: exports.parseTag
 
@@ -50,7 +50,7 @@ See: exports.parseTag
 
 ## parseTag()
 
-Parse tag string &quot;@param {Array} name description&quot; etc.
+Parse tag string "@param {Array} name description" etc.
 
 ### Params: 
 
@@ -62,7 +62,7 @@ Parse tag string &quot;@param {Array} name description&quot; etc.
 
 ## parseTagTypes(str)
 
-Parse tag type string &quot;{Array|Object}&quot; etc.
+Parse tag type string "{Array|Object}" etc.
 
 ### Params: 
 
@@ -106,5 +106,5 @@ Escape the given `html`.
 
 * **String** 
 
-<!-- End /home/charles/Repositories/doxstrap/examples/fixtures/dox-parser.coffee -->
+<!-- End /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.coffee -->
 
