@@ -1,6 +1,6 @@
 
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/tags.js -->
+<!-- Start examples/fixtures/tags.js -->
 
 # log.js
 
@@ -30,5 +30,5 @@ See: console.log()
 
 * **Boolean** True if it success, false if not
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/tags.js -->
+<!-- End examples/fixtures/tags.js -->
 

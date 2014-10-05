@@ -1,6 +1,6 @@
 
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.coffee -->
+<!-- Start examples/fixtures/dox-parser.coffee -->
 
 # The parser
 
@@ -106,5 +106,5 @@ Escape the given `html`.
 
 * **String** 
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.coffee -->
+<!-- End examples/fixtures/dox-parser.coffee -->
 

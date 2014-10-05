@@ -1,6 +1,6 @@
 
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/small-parser.js -->
+<!-- Start examples/fixtures/small-parser.js -->
 
 # The small parser
 
@@ -25,5 +25,5 @@ Examples:
 
 * **String** Persed string
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/small-parser.js -->
+<!-- End examples/fixtures/small-parser.js -->
 

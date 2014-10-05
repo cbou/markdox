@@ -1,6 +1,6 @@
 
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.js -->
+<!-- Start examples/fixtures/dox-parser.js -->
 
 # The parser
 
@@ -111,5 +111,5 @@ Escape the given `html`.
 
 * **String** 
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.js -->
+<!-- End examples/fixtures/dox-parser.js -->
 

@@ -1,6 +1,6 @@
 
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/small-parser.coffee -->
+<!-- Start examples/fixtures/small-parser.coffee -->
 
 # The small parser
 
@@ -25,5 +25,5 @@ Examples:
 
 * **String** Persed string
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/small-parser.coffee -->
+<!-- End examples/fixtures/small-parser.coffee -->
 

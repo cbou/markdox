@@ -22,10 +22,8 @@ Parses and generates the documentation for given files.
 ### Params: 
 
 * **String|Array** *files* Files to process
-
 * **Object|Function|String** *options* The options or the callback (if there is not options) or the output option
-
-* **Function** *callback* The callback, it gets two arguments (err, output)
+* **Function** *callback* The callback, it gets two arguments (err, output) 
 
 ## parse(filepath, options, callback)
 
@@ -39,10 +37,8 @@ Parses the given file.
 ### Params: 
 
 * **String** *filepath* Filepath to parse
-
 * **Object|Function** *options* The options or the callback (if there is not options)
-
-* **Function** *callback* The callback, it gets two arguments (err, result)
+* **Function** *callback* The callback, it gets two arguments (err, result) 
 
 ## generate(docfiles, options, callback)
 
@@ -51,10 +47,8 @@ Generates the output for comments.
 ### Params: 
 
 * **Object** *docfiles* Comments to render
-
 * **Object|Function|String** *options* The options or the callback (if there is not options)
-
-* **Function** *callback* The callback, it gets two arguments (err, output)
+* **Function** *callback* The callback, it gets two arguments (err, output) 
 
 <!-- End lib/markdox.js -->
 

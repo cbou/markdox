@@ -1,6 +1,6 @@
 
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/small-parser.js -->
+<!-- Start examples/fixtures/small-parser.js -->
 
 # The small parser
 
@@ -25,9 +25,9 @@ Examples:
 
 * **String** Persed string
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/small-parser.js -->
+<!-- End examples/fixtures/small-parser.js -->
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.js -->
+<!-- Start examples/fixtures/dox-parser.js -->
 
 # The parser
 
@@ -138,9 +138,9 @@ Escape the given `html`.
 
 * **String** 
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.js -->
+<!-- End examples/fixtures/dox-parser.js -->
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/small-parser.coffee -->
+<!-- Start examples/fixtures/small-parser.coffee -->
 
 # The small parser
 
@@ -165,9 +165,9 @@ Examples:
 
 * **String** Persed string
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/small-parser.coffee -->
+<!-- End examples/fixtures/small-parser.coffee -->
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.coffee -->
+<!-- Start examples/fixtures/dox-parser.coffee -->
 
 # The parser
 
@@ -273,9 +273,9 @@ Escape the given `html`.
 
 * **String** 
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/dox-parser.coffee -->
+<!-- End examples/fixtures/dox-parser.coffee -->
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/tags.js -->
+<!-- Start examples/fixtures/tags.js -->
 
 # log.js
 
@@ -305,9 +305,9 @@ See: console.log()
 
 * **Boolean** True if it success, false if not
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/tags.js -->
+<!-- End examples/fixtures/tags.js -->
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/tags.coffee -->
+<!-- Start examples/fixtures/tags.coffee -->
 
 # log.js
 
@@ -336,9 +336,9 @@ See: console.log()
 
 * **Boolean** True if it success, false if not
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/tags.coffee -->
+<!-- End examples/fixtures/tags.coffee -->
 
-<!-- Start /Users/charles/Repositories/markdox/examples/fixtures/iced.iced -->
+<!-- Start examples/fixtures/iced.iced -->
 
 ## search
 
@@ -349,5 +349,5 @@ Search on Twitter with a single keyword
 * **String** *keyword* The keyword
 * **Function** *callback* The callback function with arguments (result).
 
-<!-- End /Users/charles/Repositories/markdox/examples/fixtures/iced.iced -->
+<!-- End examples/fixtures/iced.iced -->
 
