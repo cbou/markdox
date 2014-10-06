@@ -1,7 +1,7 @@
 {
   "name": "markdox"
   , "description": "Markdox is a documentation generator based on Dox and Markdown with support for JavaScript, CoffeeScript and IcedCoffeeScript."
-  , "version": "0.1.6"
+  , "version": "0.1.7"
   , "author": "Charles Bourasseau <charles.bourasseau@gmail.com>"
   , "contributors": [
   ]
