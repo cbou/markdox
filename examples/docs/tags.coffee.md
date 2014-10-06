@@ -21,7 +21,7 @@ This method log a given message to the console.
 
 See: console.log()
 
-### Params: 
+### Params:
 
 * **String** *message* The message to log
 

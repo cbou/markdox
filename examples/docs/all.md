@@ -17,7 +17,7 @@ Examples:
     parse(str)
     // => "wahoo"
 
-### Params: 
+### Params:
 
 * **String|Buffer** *str* String to parse
 
@@ -45,7 +45,7 @@ Parse comments in the given string of `js`.
 
 See: exports.parseComment
 
-### Params: 
+### Params:
 
 * **String** *js* 
 * **String** *js2* 
@@ -68,7 +68,7 @@ The comment object returned contains the following:
 
 See: exports.parseTag
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -80,7 +80,7 @@ See: exports.parseTag
 
 Parse tag string "@param {Array} name description" etc.
 
-### Params: 
+### Params:
 
 * **String** ** 
 
@@ -94,7 +94,7 @@ shouldn't fail
 
 Parse tag type string "{Array|Object}" etc.
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -118,7 +118,7 @@ supports:
   - properties
   - declarations
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -130,7 +130,7 @@ supports:
 
 Escape the given `html`.
 
-### Params: 
+### Params:
 
 * **String** *html* 
 
@@ -157,7 +157,7 @@ Examples:
     parse(str)
     // => "wahoo"
 
-### Params: 
+### Params:
 
 * **String|Buffer** *str* String to parse
 
@@ -185,7 +185,7 @@ Parse comments in the given string of `js`.
 
 See: exports.parseComment
 
-### Params: 
+### Params:
 
 * **String** *js* 
 
@@ -207,7 +207,7 @@ Parse the given comment `str`.
 
 See: exports.parseTag
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -219,7 +219,7 @@ See: exports.parseTag
 
 Parse tag string "@param {Array} name description" etc.
 
-### Params: 
+### Params:
 
 * **String** ** 
 
@@ -231,7 +231,7 @@ Parse tag string "@param {Array} name description" etc.
 
 Parse tag type string "{Array|Object}" etc.
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -255,7 +255,7 @@ supports:
   - properties
   - declarations
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -265,7 +265,7 @@ supports:
 
 Escape the given `html`.
 
-### Params: 
+### Params:
 
 * **String** *html* 
 
@@ -297,7 +297,7 @@ This method log a given message to the console.
 
 See: console.log()
 
-### Params: 
+### Params:
 
 * **String** *message* The message to log
 
@@ -328,7 +328,7 @@ This method log a given message to the console.
 
 See: console.log()
 
-### Params: 
+### Params:
 
 * **String** *message* The message to log
 
@@ -344,7 +344,7 @@ See: console.log()
 
 Search on Twitter with a single keyword 
 
-### Params: 
+### Params:
 
 * **String** *keyword* The keyword
 * **Function** *callback* The callback function with arguments (result).

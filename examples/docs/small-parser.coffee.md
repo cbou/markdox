@@ -17,7 +17,7 @@ Examples:
     parse(str)
     // => "wahoo"
 
-### Params: 
+### Params:
 
 * **String|Buffer** *str* String to parse
 

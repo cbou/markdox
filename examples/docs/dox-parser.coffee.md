@@ -18,7 +18,7 @@ Parse comments in the given string of `js`.
 
 See: exports.parseComment
 
-### Params: 
+### Params:
 
 * **String** *js* 
 
@@ -40,7 +40,7 @@ Parse the given comment `str`.
 
 See: exports.parseTag
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -52,7 +52,7 @@ See: exports.parseTag
 
 Parse tag string "@param {Array} name description" etc.
 
-### Params: 
+### Params:
 
 * **String** ** 
 
@@ -64,7 +64,7 @@ Parse tag string "@param {Array} name description" etc.
 
 Parse tag type string "{Array|Object}" etc.
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -88,7 +88,7 @@ supports:
   - properties
   - declarations
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -98,7 +98,7 @@ supports:
 
 Escape the given `html`.
 
-### Params: 
+### Params:
 
 * **String** *html* 
 

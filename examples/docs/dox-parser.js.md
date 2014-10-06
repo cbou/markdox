@@ -18,7 +18,7 @@ Parse comments in the given string of `js`.
 
 See: exports.parseComment
 
-### Params: 
+### Params:
 
 * **String** *js* 
 * **String** *js2* 
@@ -41,7 +41,7 @@ The comment object returned contains the following:
 
 See: exports.parseTag
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -53,7 +53,7 @@ See: exports.parseTag
 
 Parse tag string "@param {Array} name description" etc.
 
-### Params: 
+### Params:
 
 * **String** ** 
 
@@ -67,7 +67,7 @@ shouldn't fail
 
 Parse tag type string "{Array|Object}" etc.
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -91,7 +91,7 @@ supports:
   - properties
   - declarations
 
-### Params: 
+### Params:
 
 * **String** *str* 
 
@@ -103,7 +103,7 @@ supports:
 
 Escape the given `html`.
 
-### Params: 
+### Params:
 
 * **String** *html* 
 
