@@ -13,8 +13,8 @@ var program = require('commander')
 
 program
   .version(markdox.version)
-  .option('-o, --output <filepath>', 'specify filepath to output [/path/to/output.md]', String, process.cwd() + '/output.md')
-  .command('markdox [options]... files...');
+  .usage('[options...] files...')
+  .option('-o, --output <filepath>', 'specify filepath to output [/path/to/output.md]', String, process.cwd() + '/output.md');
 
 // examples
 
