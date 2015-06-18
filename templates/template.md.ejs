@@ -11,7 +11,7 @@
           ## <?= comment.name ?>
         <? } ?>
       <? } ?>
-        
+
         <?= comment.description ?>
 
         <? if (comment.deprecated) { ?>
@@ -29,6 +29,12 @@
         <? if (comment.see) { ?>
           See: <?= comment.see ?>
         <? } ?>
+
+      <? if (comment.propertyTags.length > 0) { ?>
+        ### Properties:
+        <? comment.propertyTags.forEach(function(propertyTag) { ?>
+          * **<?= propertyTag.joinedTypes ?>** *<?= propertyTag.name ?>* <?= propertyTag.description ?><? }) ?>
+      <? } ?>
 
       <? if (comment.paramTags.length > 0) { ?>
         ### Params:
