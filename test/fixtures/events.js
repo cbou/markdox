@@ -5,7 +5,7 @@
  * @fires someOtherEvent
  * @listens someGlobalEvent
  * @listens SomeClass#event:myEvent
- * @throws {Error}
+ * @throws {Error} Throws on error
  */
 function foo() {}
 
