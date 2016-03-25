@@ -48,6 +48,11 @@ Here is the list of supported tags:
  * @method name
  * @class name
  * @function name
+ * @event
+ * @type {type}
+ * @property {type} name Message
+ * @fires event
+ * @listens event
 
 Javascript comments should be like this:
 
