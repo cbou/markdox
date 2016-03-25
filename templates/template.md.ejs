@@ -63,6 +63,13 @@
         <? }) ?>
       <? } ?>
 
+      <? if (comment.throwsTags.length > 0) { ?>
+        ### Throws:
+        <? comment.throwsTags.forEach(function(throws) { ?>
+          * **<?= throws.joinedTypes ?>**
+        <? }) ?>
+      <? } ?>
+
     <? } ?>
   <? }) ?>
 
