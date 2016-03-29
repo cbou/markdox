@@ -8,7 +8,7 @@
         <? if (comment.isMethod || comment.isFunction) { ?>
           ## <?= comment.name ?>(<?= comment.paramStr ?>)
         <? } else { ?>
-          ## <?= comment.name ?>
+          ## <?= comment.name ?> <? if (comment.hasType) { ?> <?= comment.tagType ?> <? } ?>
         <? } ?>
       <? } ?>
 
@@ -48,6 +48,28 @@
           *<? if (returnTag.types.length > 0) { ?> **<?= returnTag.joinedTypes ?>**<? } ?> <?= returnTag.description ?>
         <? }) ?>
       <? } ?>
+
+      <? if (comment.fires.length > 0) { ?>
+        ### Fires:
+        <? comment.fires.forEach(function(event) { ?>
+          * **<?= event ?>**
+        <? }) ?>
+      <? } ?>
+
+      <? if (comment.listens.length > 0) { ?>
+        ### Listens:
+        <? comment.listens.forEach(function(event) { ?>
+          * **<?= event ?>**
+        <? }) ?>
+      <? } ?>
+
+      <? if (comment.throwsTags.length > 0) { ?>
+        ### Throws:
+        <? comment.throwsTags.forEach(function(throws) { ?>
+          * **<?= throws.joinedTypes ?>** <?= throws.description ?>
+        <? }) ?>
+      <? } ?>
+
     <? } ?>
   <? }) ?>
 

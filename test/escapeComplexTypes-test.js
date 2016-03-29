@@ -8,9 +8,9 @@ describe('Markdox', function() {
     markdox.process(file, function(err, output) {
       should.not.exist(err);
 
-      output.should.match(/Promise.\\<Object>/);
-      output.should.match(/Promise.\\<Array>/);
-      output.should.match(/Array.\\<Object>/);
+      output.should.match(/Promise.&lt;Object&gt;/);
+      output.should.match(/Promise.&lt;Array&gt;/);
+      output.should.match(/Array.&lt;Object&gt;/);
 
       done();
     });
