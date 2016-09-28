@@ -121,7 +121,7 @@ markdox.process(fixtures, options, function(){
 Documentation
 ---
 
-Documentation is [here](https://github.com/cbou/markdox/blob/master/doc/api.md) and can be generate with:
+Documentation is [here](https://github.com/cbou/markdox/blob/master/doc/api.md) and can be generated with:
 
     $ npm run-script documentation
 
