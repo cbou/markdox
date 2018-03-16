@@ -50,6 +50,7 @@ Here is the list of supported tags:
  * @function name
  * @event
  * @type {type}
+ * @api {visibility}
  * @property {type} name Message
  * @fires event
  * @listens event
